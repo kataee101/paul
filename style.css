@@ -1,0 +1,459 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*topbar style start*/
+
+
+.container {
+    width: 100%;
+    margin: auto;
+}
+
+.top_bar .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.top_bar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.top_bar {
+    font-size: 14px;
+}
+@media screen and (max-width: 503px){
+    .top_bar {
+        display: none;
+    }
+   
+}
+
+/*topbar style end*/
+/* header section styling start */
+
+.header_section {
+    background-color: rgb(141, 149, 95);
+    padding: 10px 0;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+        rgba(0, 0, 0, 0.12) 0px -12px 30px,
+        rgba(0, 0, 0, 0.12) 0px 4px 6px,
+        rgba(0, 0, 0, 0.17) 0px 12px 13px,
+        rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.header_section logo h2 {
+    font-variant: small cap;
+    font-style: italic;
+    font-size: 35px;
+}
+
+.header_section .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_section ul {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+.header_section ul li {
+    padding: 5px 2px;
+    text-transform: uppercase;
+}
+
+.header_section ul li:hover {
+    background-color: rgb(203, 204, 205);
+    color: rgb(8, 47, 139);
+    /*border-bottom: 1px solid black;*/
+    cursor: pointer;
+}
+
+.nav_link {
+    position: relative;
+}
+
+.header_section .dropdown {
+    background-color: rgb(160, 160, 55);
+    color: blanchedalmond;
+    display: none;
+    padding: 10px;
+    /*spacing*/
+    margin-left: -20px;
+    position: absolute;
+    width: 170px;
+    top: 29px;
+}
+
+.header_section .dropdown li {
+    font-size: 15px;
+}
+
+.nav_link:hover .dropdown {
+    display: block;
+}
+.menu_bar{
+    display: none;
+}
+.menu_bar i{
+    font-size: 25px;
+    cursor:pointer;
+}
+@media screen and (max-width: 863px) {
+    .container {
+        width:95%;
+    }
+}
+@media screen and (max-width:721px){
+    .nav_elements ul{
+     display: none;
+    }
+    .menu_bar{
+        display: block;
+    }
+}
+@media screen and (max-width:501px) {
+    .header_section{
+       background-color: rgb(177, 177, 119);
+       color: rgb(48, 48, 17);
+    }
+    
+}
+.blog_link {
+    position: relative;
+}
+
+.header_section .dropdown {
+    background-color: rgb(160, 160, 55);
+    color: rgb(14, 12, 10);
+    display: none;
+    padding: 10px;
+    /*spacing*/
+    margin-left: -20px;
+    position: absolute;
+    width: 180px;
+    top: 29px;
+    z-index: 1000;
+}
+
+.header_section .dropdown li {
+    font-size: 15px;
+}
+
+.blog_link:hover .dropdown {
+    display: block;
+}
+
+/* header section end */
+/* hero section styling start */
+.hero_section {
+    background-color: rgb(64, 64, 11);
+    color: rgb(245, 245, 240);
+    position: relative;
+}
+
+.hero_section .overlay {
+    height: 600px;
+    width: 100%;
+    background: url("./images/157814-dngaqrvkqw-1618826763.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.6;
+}
+
+.hero_section_content {
+    position: absolute;
+    top: 25%;
+    left: 10%;
+    width: 50%;
+}
+
+.hero_section_content p {
+    font-size: 18px;
+    font-style: italic;
+    padding: 20px 0;
+    color: aliceblue;
+}
+
+.hero_section_content button {
+    border: none;
+    background-color: rgb(134, 167, 96);
+    padding: 15px 23px;
+    text-transform: uppercase;
+    font-size: 17px;
+}
+@media screen and (max-width:612px){
+    .hero_section .overlay{
+height: 500;
+    }
+    .hero_section_content{
+        top:15%;
+        left:5%;
+    }
+    .hero_section h1{
+        font-size: 30px;
+    }
+    .hero_section_content p{
+        font-size: 16px;
+    }
+}
+
+
+/* hero section styling end */
+/* course highlight styling s[tarts  */
+.course_highlights {
+    position: relative;
+    top: -38px;
+}
+
+.course_highlights .container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    row-gap: 30px;
+}
+
+.course_card {
+    width: 350px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+        rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+        rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
+}
+
+.course_card h4 {
+    background-color: rgb(167, 167, 118);
+    color: rgb(246, 251, 246);
+    text-align: center;
+    padding: 10px 0;
+}
+
+.course_card p {
+    padding: 15px;
+}
+
+.course_card button {
+    border: none;
+    margin: 15px;
+    padding: 5px 10px;
+    background-color: rgb(157, 157, 98);
+    color: rgb(248, 248, 241);
+    cursor: pointer;
+
+}
+
+
+/* course highlight styling ends  */
+/* popular course styling start */
+.popular_course {
+    padding:0px ;
+    margin-top: -30px;
+}
+
+.popular_course .container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap:50px;
+}
+
+.head {
+    text-align: center;
+    padding: 30px;
+}
+
+.head h2 {
+    font-size: 40px;
+    color: rgb(77, 77, 35);
+}
+
+.head h2::before {
+    content: "";
+    width: 50px;
+    height: 4px;
+    background-color: rgb(168, 168, 99);
+    display: block;
+    margin: 20px auto;
+}
+
+.popular_course .course_card img {
+    width: 100%;
+    height: 180px;
+}
+
+.popular_course .course_card h5 {
+    text-align: center;
+    font-size: 25px;
+    padding: 10px;
+}
+
+.popular_course .course_card p {
+    font-style: italic;
+    margin-top: -20px;
+}
+
+
+.author{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:rgb(206, 206, 122) ;
+
+}
+.author .author_image img{
+height:80px;
+width:80px;
+border-radius: 50%;
+}
+
+.author_name .name{
+    font-size: 15px;
+    font-weight: 550;
+    margin-bottom:-20px ;
+}
+.author_name .name span{
+   
+    color: rgb(44, 57, 13);
+    height:50px;
+    
+}
+.price {
+    background-color:rgb(165, 165, 115);
+    color:rgb(56, 56, 11);
+     padding-top:  18px;
+     front-weight: 600;
+    }
+    .price p{
+        font-size: 20px;
+        font-weight: 550;
+    }
+    /* popular course styling end */
+    /* mid section styling start */
+    .mid_section{
+        background-color: rgb(195, 195, 151);
+        color:rgb(51, 51, 17);
+        padding:100px;
+        margin-top: 70px ;
+    }
+    .mid_section .container{
+        display:flex;
+        flex-wrap: wrap;
+        row-gap: 10px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .mid_section .button button{
+        border:none;
+        padding: 15px 30px;
+        text-transform: uppercase;
+        font-size: 18px;
+        cursor: pointer;
+        border: 1px solid aliceblue;
+    }
+    .mid_section .button button:hover{
+        background-color: transparent;
+        color:aliceblue;
+    }
+     /* mid section styling end */
+     /* testimonial setion styling start */
+     
+     .testimonial_section{
+        
+     /* margin-top: 20px; */
+     text-align: center;
+     background: url(./images/wall-1217083_640.jpg) no-repeat;
+    background-size: cover;
+    padding:20px 0 30px 0;
+    color:rgb(42, 42, 10);
+    background-color: rgb(181, 181, 129);
+    
+    }
+    .testimonial_card .testi_image img{
+        height: 120ox;
+        width: 120px;
+        border-radius: 50%;
+    }
+    .testimonial_card p{
+        font-size: 10px;
+        padding: 20px;
+        font-style:italic;
+    }
+    .testimonial_card p i {
+        font-size: 35px;
+    }
+    .name_and_position h4{
+        font-size: 27px;
+        padding-top: 15px;
+    }
+    .testimonial_section .head h2{
+        color: rgb(32, 37, 10);
+
+    }
+    .testimonial_section .head h2::before{
+        background-color: rgb(42, 51, 12);
+
+    }
+
+    
+      /* testimonial setion styling end */
+      /* footer section styling start */
+      .footer_section{
+        background-color: rgb(203, 203, 138);
+      }
+      .footer_section .container
+      {
+        display:flex;
+        flex-wrap: wrap;
+        row-gap: 30px;
+        justify-content: space-evenly;
+      
+        width: 100%;
+        color:rgb(39, 39, 8);
+      }
+      .footer_link h4{
+        font-size: 22px;
+        padding-bottom: 10px;
+      }
+      .footer_section ul{
+        list-style: none;
+      }
+      .footer_section ul li{
+        padding:3px 0;
+      }
+      .footer_section .social_icons ul{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 6px;
+        gap:10px;
+        text-align: center;
+        align-items: center;
+      }
+      .footer_section .social_icons li{
+        height:35px;
+        width:35px;
+        border-radius: 50%;
+        padding:0;
+        background-color: rgb(174, 176, 171);
+        color:rgb(47, 47, 16);
+      }
+      .footer_section .social_icons li i{
+        margin-top:10px;
+        font-size: 14px;
+      }
+    .footer_section p{
+        width:85%;
+       
+        margin:auto;
+        text-align:center;
+          margin-top: 40px;
+          border-top: 1px solid rgb(30, 30, 4);
+          padding-top: 40px;
+    }
+
+       /* footer section styling end */
